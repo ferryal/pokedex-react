@@ -1,0 +1,46 @@
+{
+  "name": "pokedex-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.0-beta.10",
+    "react-dom": "^16.13.0",
+    "react-infinite-scroll-component": "^5.0.5",
+    "react-redux": "^7.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-toastify": "^5.3.2",
+    "react-transition-group": "^4.2.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^5.3.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "docker-build": "docker container run -it -v $(PWD):/app react:app build",
+    "docker-run": "docker run -v ${PWD}:/app -v /app/node_modules -p 3001:3000 --rm react:app",
+    "docker-image": "docker build -t react:app ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "jest-cli": "^24.7.1",
+    "puppeteer": "^1.19.0"
+  }
+}
