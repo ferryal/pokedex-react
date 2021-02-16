@@ -110,3 +110,26 @@ export function fetchListPokemon(start, count) {
     });
   };
 }
+
+
+
+export function fetchPokemonDetail(id) {
+  return (dispatch) => {
+    axios.get(`${config.apiUrl}/v2/pokemon/${id}`,{
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then((res) => {
+      if (res.status === 200) {
+        const response = res.data;
+        dispatch(fetchSuccessDetail(response));
+      } else {
+        dispatch(fetchFailedDetail());
+      }
+    }).catch(() => {
+      dispatch(fetchFailedDetail());
+    })
+  }
+}
+
+
