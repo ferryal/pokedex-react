@@ -133,3 +133,24 @@ export function fetchPokemonDetail(id) {
 }
 
 
+export function addPokemon(payload) {
+  return (dispatch) => {
+    if ( payload !== '') {
+      dispatch(fetchAddPokemon(payload))
+      dispatch(fetchSuccessMyPokemon(payload))
+    } else {
+      dispatch(fetchFailed())
+    }
+  }
+}
+
+
+export function releasePokemon(payload) {
+  return (dispatch) => {
+    if (payload !== '') {
+      dispatch(removePokemon(payload))
+    } else {
+      dispatch(fetchFailed())
+    }
+  }
+}
