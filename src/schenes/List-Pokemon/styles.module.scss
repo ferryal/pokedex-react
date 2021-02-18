@@ -79,6 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .textChildrenFilter {
@@ -93,6 +94,23 @@
 
 .wrapperFilter {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-flow: wrap;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.badge {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(44, 185, 114);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }

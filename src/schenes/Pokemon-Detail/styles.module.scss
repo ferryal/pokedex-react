@@ -1,84 +1,113 @@
 .navWrapper {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .navWrapper a {
-    font-weight: 500;
-    font-size: 16px;
-    border-bottom: 1px solid;
+  font-weight: 500;
+  font-size: 16px;
+  border-bottom: 1px solid;
 }
 
 .wrapperCard {
-    max-width: 40%;
-    position: relative;
-    width: 40%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+  max-width: 40%;
+  position: relative;
+  width: 40%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .card {
-    align-items: center;
-    margin: 10px 0 10px 0 !important;
-    box-shadow: 0 3px 15px #ccc;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    background-clip: border-box;
-    border-radius: .25rem;
-    border-color: #343A40;
-    align-items: center;
-    margin: 10px 0 10px 0 !important;
-    border-radius: 20px;
-    text-align: center;
+  align-items: center;
+  margin: 10px 0 10px 0 !important;
+  box-shadow: 0 3px 15px #ccc;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  border-color: #343a40;
+  align-items: center;
+  margin: 10px 0 10px 0 !important;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .number {
-    background-color: rgba(0, 0, 0, .1);
-    border-radius: 10px;
-    font-size: .8em;
-    padding: 5px 10px;
-    margin-bottom: 1rem;
-    font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .wrapperImg {
-    background-color: hsla(0, 0%, 100%, .6);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: center;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
 .name {
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .container {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .img {
-    max-width: 25%;
-    width: 25%;
+  max-width: 25%;
+  width: 25%;
 }
 
 .wrapperInfo {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .info {
-    text-align: left;
+  text-align: left;
 }
 
+.badge {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(73, 104, 89);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.badgeInfo {
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(44, 185, 114);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.collapse {
+  margin: 1rem;
+}
+
+.size {
+  font-size: 15px;
+}
