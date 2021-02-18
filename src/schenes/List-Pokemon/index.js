@@ -5,7 +5,7 @@ import cx from 'classnames';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { fetchListPokemon } from '../../actions/pokemon';
+import { fetchListPokemon, resetDetailPokemon } from '../../actions/pokemon';
 import styles from './styles.module.scss';
 
 const ListPokemon = () => {
@@ -43,6 +43,7 @@ const ListPokemon = () => {
 
   useEffect(() => {
     dispatch(fetchListPokemon(start, count));
+    dispatch(resetDetailPokemon());
   }, [dispatch]);
 
   useEffect(() => {
