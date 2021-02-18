@@ -120,6 +120,7 @@ const MyPokemon = () => {
                     Score in total base stat:
                     {result.totalBase}
                   </p>
+                  <p className={styles.note}>Notes. selected winner based on total base stats</p>
                 </>
               )
               : ''
