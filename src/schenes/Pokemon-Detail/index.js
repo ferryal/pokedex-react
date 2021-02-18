@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
+import cx from 'classnames';
 import { ToastContainer, toast } from 'react-toastify';
 import { fetchPokemonDetail, addPokemon } from '../../actions/pokemon';
 import styles from './styles.module.scss';
@@ -129,7 +130,7 @@ const PokemonDetail = (props) => {
                           )) : ''}
                       </div>
                     </div>
-                    <button className="btn btn-primary" onClick={handleAddPokemon}>Compare pokemon</button>
+                    <button className={cx(styles.size, 'btn', 'btn-primary')} onClick={handleAddPokemon}>Compare pokemon</button>
                   </>
                 ) : <img src="/assets/images/spinner.gif" alt="" style={{ width: '20%' }} />
             }
